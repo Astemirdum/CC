@@ -1,0 +1,31 @@
+{
+    "nonterminals": ["S"],
+    "terminals": ["a", "b"],
+    "start": "S",
+    "rules": [
+        {
+            "left": {"type": "nonterminal", "value": "S"},
+            "right": [
+                {"type": "terminal", "value": "a"},
+                {"type": "nonterminal", "value": "S"},
+                {"type": "terminal", "value": "b"},
+                {"type": "nonterminal", "value": "S"}
+            ]
+        },
+        {
+            "left": {"type": "nonterminal", "value": "S"},
+            "right": [
+                {"type": "terminal", "value": "b"},
+                {"type": "nonterminal", "value": "S"},
+                {"type": "terminal", "value": "a"},
+                {"type": "nonterminal", "value": "S"}
+            ]
+        },
+        {
+            "left": {"type":"nonterminal", "value": "S"},
+            "right": [
+                {"type": "terminal", "value": "eps"}
+            ]
+        }
+    ]
+}

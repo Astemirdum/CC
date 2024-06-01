@@ -1,0 +1,1 @@
+(number * id + number) <= (number + number ^ (number - id))

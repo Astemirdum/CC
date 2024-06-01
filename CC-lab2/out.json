@@ -1,0 +1,79 @@
+{
+  "nonterminals": [
+    "S",
+    "A",
+    "B",
+    "B'"
+  ],
+  "terminals": [
+    "a",
+    "b"
+  ],
+  "start": "S",
+  "rules": [
+    {
+      "left": {
+        "type": "nonterminal",
+        "value": "S"
+      },
+      "right": [
+        {
+          "type": "nonterminal",
+          "value": "A"
+        }
+      ]
+    },
+    {
+      "left": {
+        "type": "nonterminal",
+        "value": "A"
+      },
+      "right": [
+        {
+          "type": "nonterminal",
+          "value": "B"
+        },
+        {
+          "type": "terminal",
+          "value": "a"
+        }
+      ]
+    },
+    {
+      "left": {
+        "type": "nonterminal",
+        "value": "B'"
+      },
+      "right": [
+        {
+          "type": "terminal",
+          "value": "a"
+        },
+        {
+          "type": "terminal",
+          "value": "a"
+        },
+        {
+          "type": "terminal",
+          "value": "b"
+        },
+        {
+          "type": "nonterminal",
+          "value": "B'"
+        }
+      ]
+    },
+    {
+      "left": {
+        "type": "nonterminal",
+        "value": "B'"
+      },
+      "right": [
+        {
+          "type": "terminal",
+          "value": "eps"
+        }
+      ]
+    }
+  ]
+}

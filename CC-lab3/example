@@ -1,0 +1,6 @@
+{
+    id = number = id;
+    id = number > id;
+    id = (number) <> number;
+    id = (number + id ^ (number - id)) <= (number * id + number)
+}
