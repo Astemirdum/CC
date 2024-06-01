@@ -1,0 +1,15 @@
+.idea
+*.swp
+.vscode/
+
+/example/
+
+*.dot
+*.png
+
+
+.database
+.bin
+*.tgz
+cover.out
+coverage.html
